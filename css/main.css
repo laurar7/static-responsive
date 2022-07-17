@@ -10,7 +10,7 @@ body {
 	font-size: 1em;
 }
 
-.container{
+.container {
 	max-width: 1200px;
 	width: 90%;
 	display: flex;
@@ -28,8 +28,6 @@ h3 {
 }
 h1 {
 	font-size: 1.875em;
-	width: 100%;
-	justify-content: center;
 }
 h2 {
 	font-size: 1.125em;
@@ -40,53 +38,53 @@ h3 {
 
 p {
 	font-size: 0.875em;
+	line-height: 21px;
 }
 
-ul{
+ul {
 	margin: 0;
 }
 
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
+	text-align: center;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	line-height: 2;
-	width: 100%;
-	text-align: center;
 }
 
 header h1 {
-	max-width: 1200px;
 	border-bottom: 3px solid #77a466;
-	text-align: center;
+	margin: 0;
+	padding: 38px 20px 20px 20px; 
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	align-items: center;
-	justify-content: center;
-	line-height: 3;
+    padding: 20px 0; 
+    width: 100%; 
 }
+
 header nav ul {
-	justify-content: center;
-	justify-items: center;
-	text-align:center;
+	margin: 0;
+	padding: 0;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	display: flex;
+	padding: 10px 0;
+    list-style: none;
 }
-header nav ul li a{
+header nav ul li a {
 	text-decoration: none;
 	color:#77a466;
-	width: 90%;
 }
 
 /*The widths are in a percentage!*/
@@ -96,22 +94,13 @@ header nav ul li a{
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	width: 100%;
-	line-height: 1.5em;
-	text-align: left;
 }
 
-.main-image {
-	width: 100%;
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	width: 100%;
-}
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
@@ -120,6 +109,7 @@ header nav ul li a{
 .main-title p {
 	padding: 0;
 	font-size: 1em;
+	line-height: 1.5625;
 }
 
 .section-one,
@@ -129,19 +119,9 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
-.section-one h3 {
-	width: 100%;
-}
-
-.section-two h3,
-.section-three h3 {
-	width: 100%;
-}
-
 .menu {
 	list-style: none;
 	padding: 0;
-	width: 100%;
 }
 .menu li {
 	padding: 10px 0;
@@ -151,12 +131,12 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em;
-	width: 100%;
+	line-height: 1.3125;
 }
 
 .address {
 	font-size: 1em;
-	width: 100%;
+	line-height: 1.5;
 }
 
 /*The widths are in a percentage!*/
@@ -166,6 +146,7 @@ footer {
 	text-align: center;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-flow: row wrap;
 	width: 100%;
 }
@@ -181,43 +162,21 @@ footer span {
  
 .bottom-section{
 	align-items: flex-start;
+	justify-content: space-between;
+	border-top: 1px solid #eee;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	border-top: 1px solid #eee;
-	flex-basis: 200px;
-	width: 33%;
-	justify-content:center;
-	flex-grow: 1;
-}
-
-.section-one{
-	border-right: 1px solid #eee;
-	padding: 10px;
+	border-top: none;
+	flex-basis: 30%;
 }
 
 .section-two{
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-	padding: 10px;
-}
-
-.section-three{
-	border-left: 1px solid #eee;
-	padding: 10px;
-}
-
-.section-one h3 {
-	width: 100%;
-}
-
-.section-two h3,
-.section-three h3 {
-	width: 100%;
-}
-
+	padding: 0 20px;
 }
  
 @media all and (min-width:1200px) {
@@ -227,20 +186,20 @@ header {
 	justify-content: space-between;
 }
 
-header nav ul {
-	display: flex;
-	justify-content: space-between;
-}
-
 header h1 {
 	width: 30%;
 	padding: 0;
-	text-align: left;
 	border-bottom: none;
+	text-align: left;
 }
 
-nav{
-	width: 40%;
+header nav {
+	width: 40%;;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
 }
 	
 }
